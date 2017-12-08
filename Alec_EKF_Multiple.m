@@ -9,7 +9,7 @@ clear all
 %
 %% Pick An Option Below
 
-Option = 4;
+Option = 1;
 
 %   1 = 2 Encoder + GPS
 %   2 = 2 Encoder + IMU
@@ -32,9 +32,9 @@ dtEnc = 1/fEnc;             % Encoder timestep
 sim_length = 10000;         % Straight line length
 t_len = sim_length/v;       % Time moving 
 
-encStd = 0.5;               % Standard Deviations
-GPSStd = 40;  
-IMUStd = 0.2*pi/180;          
+encStd = 0.1;               % Standard Deviations
+GPSStd = 200;  
+IMUStd = 0.1*pi/180;          
 
 sinamp = 0;                %Amplitude of GPS X sine wave
 
